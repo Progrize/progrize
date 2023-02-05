@@ -659,6 +659,13 @@ a:hover {
 	}
 }
 
+#landing-profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
 #landing-header {
 	-moz-animation: landing-header 1s 2.25s forwards;
 	-webkit-animation: landing-header 1s 2.25s forwards;
