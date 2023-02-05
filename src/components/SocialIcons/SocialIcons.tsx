@@ -1,20 +1,21 @@
+import Link from 'next/link';
 import { IContact } from "@/interfaces/contact";
 import { Icon } from "../Icon/Icon";
+import { contact } from '@/data';
+import { faDribbble } from '@fortawesome/free-brands-svg-icons/faDribbble';
 
 interface ISocialIconProps {
-    size: 'small' | 'large',
-    data: IContact[];
+    redirectLink?: string;
 }
 
-export const ISocialIconProps = ({ size, data }: ISocialIconProps) => {
+export const ISocialIcons = ({ redirectLink = '/profile' }: ISocialIconProps) => {
     return (
         <nav>
-            <ul>
+            <ul className="icons">
                 {
-                    data.map(contact => <li key={contact.id}>
+                    contact.map(contact => <li key={contact.id}>
                         <Icon
-                            size={size}
-                            link={contact.link}
+                            link={contact.link.startsWith('/') ? redirectLink : contact.link}
                             icon={contact.icon}
                             iconType={contact.iconType}
                             iconName={contact.iconName}

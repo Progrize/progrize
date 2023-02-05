@@ -2,6 +2,7 @@ import { IContact } from '@/interfaces/contact';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
+import { faDribbble } from '@fortawesome/free-brands-svg-icons/faDribbble';
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 // import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 // import { faAngellist } from '@fortawesome/free-brands-svg-icons/faAngellist';
@@ -35,8 +36,8 @@ export const contact: IContact[] = [
     },
     {
         id: '4',
-        link: "https://www.hassanmunir.me/",
-        icon: faEnvelope,
+        link: "/",
+        icon: faDribbble,
         iconType: "brands",
         iconName: "fa-dribbble",
         label: "Website",

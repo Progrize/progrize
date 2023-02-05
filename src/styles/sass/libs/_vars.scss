@@ -1,21 +1,21 @@
 // Misc.
 	$misc: (
-		bg:					#348cb2 url("images/bg.jpg") bottom left,
-		bg-width:			1500px
+		landing-bg:					#348cb2 url("images/bg.jpg") bottom left,
+		landing-bg-width:			1500px
 	);
 
 // Duration.
 	$duration: (
-		bg:					60s,
-		wrapper:			3s,
-		overlay:			1.5s,
-		header:				1s,
+		landing-bg:					60s,
+		landing-wrapper:			3s,
+		landing-overlay:			1.5s,
+		landing-header:				1s,
 		nav-icons:			0.5s
 	);
 
 // Size.
 	$size: (
-		nav-icon-wrapper:	5.35em,
+		nav-icon-landing-wrapper:	5.35em,
 		nav-icon:			1.75em
 	);
 
@@ -25,13 +25,13 @@
 
 // Palette.
 	$palette: (
-		bg:					#fff,
+		landing-bg:					#fff,
 		fg:					#fff,
 
 		nav-icon: (
-			hover-bg:		rgba(255,255,255,0.175),
+			hover-landing-bg:		rgba(255,255,255,0.175),
 			hover-fg:		#fff,
-			active-bg:		rgba(255,255,255,0.35),
+			active-landing-bg:		rgba(255,255,255,0.35),
 			active-fg:		#fff
 		)
 	);
