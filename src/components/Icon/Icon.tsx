@@ -1,4 +1,4 @@
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import Link from 'next/link';
 
 interface IIconProps {
@@ -14,11 +14,11 @@ export const Icon = ({ link, icon, iconType, iconName, label }: IIconProps) => {
         <>
             {link.startsWith('/') ?
                 <Link href={link} className={`icon ${iconType} ${iconName}`} >
-                    <span className="label">{label}</span>
+                    <span className='label'>{label}</span>
                 </Link>
                 :
-                <a href={link} rel="noreferrer" target="_blank" className={`icon ${iconType} ${iconName}`}>
-                    <span className="label">{label}</span>
+                <a href={link} rel='noreferrer' target='_blank' className={`icon ${iconType} ${iconName}`}>
+                    <span className='label'>{label}</span>
                 </a>}
         </>
     )
